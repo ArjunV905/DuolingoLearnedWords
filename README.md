@@ -9,7 +9,7 @@ The program will then create a .md file with the learned words and their transla
 
 ### Config
 
-- When entering the file path, make sure to use \\ instead of \ when seperating (Ex: D:\\Code\\DuolingoLearnedWords\\)
+- When entering the file path, make sure to end with a \ (Ex: D:\Code\DuolingoLearnedWords\)
 - Make sure to fill both username and password, if entering any (Otherwise the program will prompt you to enter the details)
 - Make sure to fill both filePath and fileName, if entering any (Otherwise the program will prompt you to enter the details)
 
