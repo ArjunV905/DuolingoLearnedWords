@@ -1,6 +1,6 @@
 # DuolingoLearnedWords
 
-This code writes your learned words from Duolingo to a markdown file (.md).
+This code writes your learned words from Duolingo to a markdown file (.md) with translations. 
 
 ### Usage
 
