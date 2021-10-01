@@ -93,7 +93,7 @@ def readDir() -> bool:
     pathLine = fileList[2]
     readPath = ""
     inQuotes = False
-    #       Searching through the line to find the username
+    #       Searching through the line to find the file path
     for c in range(len(pathLine)):
         if (not inQuotes and pathLine[c] == "\""):
             inQuotes = True
@@ -110,7 +110,7 @@ def readDir() -> bool:
     nameLine = fileList[3]
     readName = ""
     inQuotes = False
-    #       Searching through the line to find the password
+    #       Searching through the line to find the file name
     for c in range(len(nameLine)):
         if (not inQuotes and nameLine[c] == "\""):
             inQuotes = True
@@ -133,11 +133,11 @@ def readLang() -> bool:
     file = open(os.path.join(sys.path[0], "config.txt"), 'r')
     fileList = file.readlines()
 
-    # Reading username
+    # Reading language
     langLine = fileList[4]
     readLang = ""
     inQuotes = False
-    #       Searching through the line to find the username
+    #       Searching through the line to find the language
     for c in range(len(langLine)):
         if (not inQuotes and langLine[c] == "\""):
             inQuotes = True
@@ -194,6 +194,7 @@ if (not readDir()):
         try:
             fileTest = open(inputPath + inputName + ".md", "w")
             valid = True
+            fileTest.close()
             print("Successfully created the file\n")
         except OSError:
             print("Invalid file path and/or name, try again\n")
