@@ -13,7 +13,7 @@ language = ""
 #----------------------------------[Methods]--------------------------------------------
 #---------------------------------------------------------------------------------------
 
-# Removes "[", "]", and "'" from the input list and returns a string combining the text
+# Removes "[", "]", and (' or ") from the input list and returns a string combining the text
 def textCleaner(input) -> str:
     phrase = str(input[0])
     rawTransl = str(input[1])
@@ -22,7 +22,14 @@ def textCleaner(input) -> str:
     for e in splitWords:
         word = ""
         for c in range(len(e)):
-            if e[c] != "[" and e[c] != "]" and e[c] != "'" :
+            symbol = "'"
+            
+            # Checking if the word has apostrophes and switches the symbol to remove to "
+            if ((e[0] == "\"" or e[1] == "\"") and (e[len(e)-1] == "\"" or e[len(e)-2] == "\"")):
+                symbol = "\""
+            
+            # Removing th
+            if e[c] != "[" and e[c] != "]" and e[c] != symbol :
                   word += e[c]
         transl += word.capitalize() + ", "
     transl = transl[:-2]                 # Removes the ending ", " for better readability 
