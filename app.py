@@ -193,7 +193,7 @@ if (not readDir()):
     inputPath = ""
     inputName = "" 
     while (not valid):
-        print("Enter the directory you want the file to be created in:   (Ex: D:\\Code\\DuolingoLearnedWords\\")
+        print("Enter the directory you want the file to be created in:   (Ex: D:\\Code\\DuolingoLearnedWords\\)")
         inputPath = input()
         print("Enter a name for the file to store the learned words:")
         inputName = input()
