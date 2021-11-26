@@ -4,7 +4,7 @@ This code writes your learned words from Duolingo to a markdown file (.md) with 
 
 ### Prerequisites
 
-Python3, Git
+Python3 (with requests), Git
 
 ### Installation
 
