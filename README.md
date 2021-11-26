@@ -2,6 +2,23 @@
 
 This code writes your learned words from Duolingo to a markdown file (.md) with translations. 
 
+### Prerequisites
+
+Python3
+Git
+
+### Installation
+
+On your terminal, navigate to where you would like to install the program and enter the following:
+```
+git clone https://github.com/ArjunV905/DuolingoLearnedWords
+```
+
+Then navigate to the downloaded folder and enter
+```
+python3 app.py
+```
+
 ### Usage
 
 You can choose to write your information/preferences in the config.txt file or enter them during execution.
@@ -9,7 +26,7 @@ The program will then create a .md file with the learned words and their transla
 
 ### Config
 
-- When entering the file path, make sure to end with a \ (Ex: D:\Code\DuolingoLearnedWords\)
+- When entering the file path, make sure to end with a \ [or / depending on your OS] (Ex: D:\Code\DuolingoLearnedWords\)
 - Make sure to fill both username and password, if entering any (Otherwise the program will prompt you to enter the details)
 - Make sure to fill both filePath and fileName, if entering any (Otherwise the program will prompt you to enter the details)
 
