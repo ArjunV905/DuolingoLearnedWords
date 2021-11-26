@@ -4,8 +4,7 @@ This code writes your learned words from Duolingo to a markdown file (.md) with 
 
 ### Prerequisites
 
-Python3
-Git
+Python3, Git
 
 ### Installation
 
@@ -14,7 +13,7 @@ On your terminal, navigate to where you would like to install the program and en
 git clone https://github.com/ArjunV905/DuolingoLearnedWords
 ```
 
-Then navigate to the downloaded folder and enter
+Then navigate to the downloaded folder and enter the following to start the program:
 ```
 python3 app.py
 ```
