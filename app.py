@@ -1,6 +1,6 @@
 import sys
 from Lib.duolingo.duolingo import Duolingo, DuolingoException
-#from Lib.cutlet.cutlet import cutlet
+import cutlet
 import os
 
 
@@ -20,8 +20,8 @@ def textCleaner(input) -> str:
     rawTransl = str(input[1])
 
     ## Checking if the language is Japanese, if so, add the romanji next to the raw phrase
-    #if (language == "Japanese"):
-    #    phrase += " (" + cutlet.Cutlet().romaji(phrase) + ")"
+    if (language == "Japanese"):
+        phrase += " (" + cutlet.Cutlet().romaji(phrase) + ")"
     
     transl = ""
     splitWords = rawTransl.split(', ')
@@ -39,7 +39,7 @@ def textCleaner(input) -> str:
                   word += e[c]
         transl += word.capitalize() + ", "
     transl = transl[:-2]                 # Removes the ending ", " for better readability 
-    return phrase + " : " + transl
+    return phrase + " :\t " + transl
 
 
 #---------------------------------------------------------------------------------------
